@@ -4,6 +4,8 @@
 
 #pragma once
 
+//#define PRINT_DEBUG
+
 class Gateway : public CommonUtils
 {
     public:

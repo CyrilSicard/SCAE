@@ -3,6 +3,8 @@
 
 #pragma once
 
+//#define PRINT_DEBUG
+
 class Client : public CommonUtils
 {
     public:

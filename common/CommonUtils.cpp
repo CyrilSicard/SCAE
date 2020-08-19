@@ -24,7 +24,7 @@ std::string CommonUtils::hash(const std::string &text, const std::string &operat
     {
         QTimings::getShared().start(operationName + "_hash");
     }
-    std::string result = QCryptographicHash::hash(QByteArray::fromStdString(text), algorithm).toStdString();
+    std::string result = QCryptographicHash::hash(QByteArray::fromStdString(text), algorithm).toHex().toStdString();
     if (!operationName.empty())
     {
         QTimings::getShared().stop(operationName + "_hash");

@@ -4,6 +4,8 @@
 
 #pragma once
 
+//#define PRINT_DEBUG
+
 class Server : public CommonUtils
 {
     public:
@@ -11,7 +13,7 @@ class Server : public CommonUtils
         ~Server() = default;
 
         void    receiveNANGRegister(QTcpSocket *socket, const std::string &nid, const std::string &auth);
-        void    receiveNANGLogin(QTcpSocket *socket, const std::string &cU, const std::string &cid, const std::string &c1, const std::string &smTime,
+        void    receiveNANGLogin(QTcpSocket *socket, const std::string &cid, const std::string &smTime,
                                  const std::string &c2, const std::string &rid, const std::string &cN, const std::string &nangTime);
 
         bool    runServer();

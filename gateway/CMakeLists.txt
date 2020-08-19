@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #include_directories(${PROJECT_SOURCE_DIR}/libs/miracl/include)
 
+set(ENV{QT_FATAL_WARNINGS} true)
+
 set(SOURCES
     ../common/QTimings.cpp
     ../common/CommonUtils.cpp
